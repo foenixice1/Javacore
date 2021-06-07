@@ -8,5 +8,6 @@ public class BT3 {
         usd = scanner.nextInt();
         vnd = 23000 * usd ;
         System.out.println("Số tiền quy đổi ra VND là : " + vnd + " VND");
+
     }
 }
