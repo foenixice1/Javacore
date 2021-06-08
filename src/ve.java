@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class ve {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in) ;
+        Scanner scanner = new Scanner(System.in);
         int ve = -1;
-        while ( ve!=0) {
+        while (ve != 0) {
             System.out.println("Menu");
             System.out.println("Ấn 1 Vẽ hình tam giác");
             System.out.println("Ấn 2 Vẽ hình vuông");
@@ -13,7 +13,7 @@ public class ve {
             System.out.println("Ấn 0 Exit");
             System.out.println("Vui lòng nhập số");
             ve = scanner.nextInt();
-            switch (ve){
+            switch (ve) {
                 case 1:
                     System.out.println("******");
                     System.out.println("*****");
@@ -21,7 +21,7 @@ public class ve {
                     System.out.println("**");
                     System.out.println("*");
                     break;
-                case 2 :
+                case 2:
                     System.out.println("******");
                     System.out.println("*    *");
                     System.out.println("******");
