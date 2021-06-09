@@ -2,11 +2,28 @@ import java.util.Scanner;
 
 public class SNTnhoHon100 {
     public static void main(String[] args) {
-        for ( int i = 2 ; i < 100 ; i++) {
-            if ( i >= 2 &&  i % 2 != 0) {
+        int n = 25;
+        System.out.println(" số nguyên tố nhỏ hơn 100 là: ");
+        int dem = 0;
+        int i = 2;
+        while (dem < n) {
+            if (isPrimeNumber(i)) {
+                System.out.print(i + " ");
+                dem++;
             }
-
-            System.out.println(i);
+            i++;
         }
+    }
+    public static boolean isPrimeNumber(int n) {
+        if (n < 2) {
+            return false;
+        }
+        int squareRoot = (int) Math.sqrt(n);
+        for (int i = 2; i <= squareRoot; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
