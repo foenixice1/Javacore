@@ -3,10 +3,6 @@ import java.util.Scanner;
 public class ClassHCN {
     double width, height;
 
-    public ClassHCN() {
-
-    }
-
     public ClassHCN(double width, double height) {
         this.width = width;
         this.height = height;
@@ -24,7 +20,7 @@ public class ClassHCN {
         return  "Chiều rộng =  " + width + ", Chiều dài = " + height;
     }
 
-//    class Chay {
+   static class Chay {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Nhập vào chiều rộng:");
@@ -37,4 +33,4 @@ public class ClassHCN {
             System.out.println("Diện tích là : " + hcn.getArea());
         }
     }
-//}
+}
